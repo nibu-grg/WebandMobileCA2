@@ -5,15 +5,15 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
-      {/* Title */}
+      {}
       <Text style={styles.title}>Memory Organizer</Text>
       
-      {/* Subtitle */}
+      {}
       <Text style={styles.subtitle}>
         Cherish and organize your precious memories effortlessly. Keep your favorite moments alive in one place.
       </Text>
       
-      {/* Images */}
+      {}
       <View style={styles.imageContainer}>
         <Image
           source={{ uri: 'https://th.bing.com/th/id/OIP.pHQpYsobUSr4u5HN6_2aAwHaD4?rs=1&pid=ImgDetMain' }}
@@ -36,8 +36,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f5f5f5',
-    justifyContent: 'center', // Center all content vertically
-    alignItems: 'center', // Center all content horizontally
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 20,
   },
   title: {
@@ -56,16 +56,16 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     flexDirection: 'row',
-    justifyContent: 'center', // Align images in the center
-    alignItems: 'center', // Ensure images are vertically aligned
-    flexWrap: 'wrap', // Allow wrapping of images if the screen is small
+    justifyContent: 'center', 
+    alignItems: 'center',
+    flexWrap: 'wrap', 
     marginTop: 20,
   },
   image: {
-    width: 120, // Adjust width for better responsiveness
-    height: 120, // Adjust height to maintain aspect ratio
+    width: 120, 
+    height: 120,
     borderRadius: 12,
-    margin: 10, // Add spacing between images
+    margin: 10, 
     backgroundColor: '#ddd',
   },
 });

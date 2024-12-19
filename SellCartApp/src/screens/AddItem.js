@@ -27,7 +27,7 @@ const AddItem = ({ navigation }) => {
   const [showModal, setShowModal] = useState(false);
   const { addItem } = useContext(AppContext);
 
-  // Request gallery permission on mount
+ 
   useEffect(() => {
     (async () => {
       const galleryStatus = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -61,7 +61,7 @@ const AddItem = ({ navigation }) => {
     const currentLocation = await Location.getCurrentPositionAsync({});
     const { latitude, longitude } = currentLocation.coords;
 
-    // Use reverse geocoding to get the address
+    
     const geoResults = await Location.reverseGeocodeAsync({ latitude, longitude });
     if (geoResults && geoResults.length > 0) {
       setLocation(geoResults[0].city || geoResults[0].region || geoResults[0].name);
@@ -71,7 +71,6 @@ const AddItem = ({ navigation }) => {
   };
 
   const handleSubmit = () => {
-    // Dismiss keyboard
     Keyboard.dismiss();
 
     if (!name || !description || !image || !location) {
