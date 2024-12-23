@@ -4,19 +4,19 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { AppProvider } from './src/context/AppContext';
 import Home from './src/screens/Home';
-import AddItem from './src/screens/AddItem';
-import ViewAllItems from './src/screens/ViewAllItems';
-import ItemDetail from './src/screens/ItemDetail';
+import AddFurniture from './src/screens/AddFurniture';
+import ViewAllFurniture from './src/screens/ViewAllFurniture';
+import FurnitureDetail from './src/screens/FurnitureDetail';
 import SplashScreen from './src/screens/SplashScreen';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-const ViewAllItemsStack = () => (
+const ViewAllFurnitureStack = () => (
   <Stack.Navigator>
-    <Stack.Screen name="ViewAllItems" component={ViewAllItems} />
-    <Stack.Screen name="ItemDetail" component={ItemDetail} />
+    <Stack.Screen name="ViewAllFurniture" component={ViewAllFurniture} />
+    <Stack.Screen name="FurnitureDetail" component={FurnitureDetail} />
   </Stack.Navigator>
 );
 
@@ -45,9 +45,9 @@ const App = () => {
               let iconName;
               if (route.name === 'Home') {
                 iconName = 'home';
-              } else if (route.name === 'AddItem') {
+              } else if (route.name === 'AddFurniture') {
                 iconName = 'add-circle';
-              } else if (route.name === 'ViewItems') {
+              } else if (route.name === 'ViewFurniture') {
                 iconName = 'list';
               }
               return <Ionicons name={iconName} size={size} color={color} />;
@@ -58,8 +58,8 @@ const App = () => {
           })}
         >
           <Tab.Screen name="Home" component={Home} />
-          <Tab.Screen name="AddItem" component={AddItem} />
-          <Tab.Screen name="ViewItems" component={ViewAllItemsStack} />
+          <Tab.Screen name="AddFurniture" component={AddFurniture} />
+          <Tab.Screen name="ViewFurniture" component={ViewAllFurnitureStack} />
         </Tab.Navigator>
       </NavigationContainer>
     </AppProvider>

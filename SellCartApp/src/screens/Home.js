@@ -6,25 +6,17 @@ const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
       {}
-      <Text style={styles.title}>Memory Organizer</Text>
+      <Text style={styles.title}>The Furniture Market</Text>
       
       {}
       <Text style={styles.subtitle}>
-        Cherish and organize your precious memories effortlessly. Keep your favorite moments alive in one place.
+      Giving Furniture a Second Chance, and Your Home a New Story!
       </Text>
       
       {}
       <View style={styles.imageContainer}>
         <Image
-          source={{ uri: 'https://th.bing.com/th/id/OIP.pHQpYsobUSr4u5HN6_2aAwHaD4?rs=1&pid=ImgDetMain' }}
-          style={styles.image}
-        />
-        <Image
-          source={{ uri: 'https://image.freepik.com/free-photo/portrait-two-young-friends-taking-selfie-while-standing-outdoors-street_58466-14618.jpg' }}
-          style={styles.image}
-        />
-        <Image
-          source={{ uri: 'https://th.bing.com/th/id/R.c739f9ec5fc588cb9fa416854f813ebf?rik=MInDGCxBtH7vrQ&pid=ImgRaw&r=0' }}
+          source={{ uri: 'https://i.pinimg.com/originals/64/ca/e4/64cae4a7acdcc8063741be1c1060e3db.jpg' }}
           style={styles.image}
         />
       </View>

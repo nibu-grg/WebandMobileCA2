@@ -91,7 +91,7 @@ const AddItem = ({ navigation }) => {
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <SafeAreaView>
       <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.title}>Preserve a Memory</Text>
+        <Text style={styles.title}>Preserve an Item</Text>
 
         <TextInput
           style={styles.input}

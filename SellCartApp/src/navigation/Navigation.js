@@ -5,8 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 
 // Import screens
 import Home from '../screens/Home';
-import AddItem from '../screens/AddItem';
-import ViewAllItems from '../screens/ViewAllItems';
+import AddFurniture from '../screens/AddFurniture';
+import ViewAllFurniture from '../screens/ViewAllFurniture';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,9 +21,9 @@ const Navigation = () => {
 
             if (route.name === 'Home') {
               iconName = focused ? 'home' : 'home-outline';
-            } else if (route.name === 'AddItem') {
+            } else if (route.name === 'AddFurniture') {
               iconName = focused ? 'add-circle' : 'add-circle-outline';
-            } else if (route.name === 'ViewAllItems') {
+            } else if (route.name === 'ViewAllFurniture') {
               iconName = focused ? 'list' : 'list-outline';
             }
 
@@ -35,8 +35,8 @@ const Navigation = () => {
         })}
       >
         <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="AddItem" component={AddItem} />
-        <Tab.Screen name="ViewAllItems" component={ViewAllItems} />
+        <Tab.Screen name="AddFurniture" component={AddFurniture} />
+        <Tab.Screen name="ViewAllFurniture" component={ViewAllFurniture} />
       </Tab.Navigator>
     </NavigationContainer>
   );

@@ -6,7 +6,7 @@ const ItemDetail = ({ route, navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Item Details</Text>
+      <Text style={styles.title}>Furniture Details</Text>
       
       <Text style={styles.name}>Name: {item.name}</Text>
       
